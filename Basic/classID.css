@@ -1,0 +1,16 @@
+body
+{
+    background-color: burlywood;
+}
+
+.bg-colourred {
+    background-color: red;
+}
+
+.colouryellow {
+    color: blue;
+}
+
+#hobby {
+color: rgb(0, 255, 255);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        margin: 30px;
+        border: 2px solid black;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        /* gap: 20px 50px; */
+    }
+
+    .item1, .item2, .item3, .item4, .item5, .item6{
+        height: 80px;
+        width: 80px;
+        border: 2px solid brown;
+        margin: 2px;
+    }
+
+    .order1{
+       flex-grow: 3;
+    }
+/* 
+    .order1{
+        order: 6;
+    }
+    .order2{
+        order: 5;
+    }
+    .order3{
+        order: 4;
+    }
+    .order4{
+        order: 3;
+    }
+    .order5{
+        order: 2;
+    }
+    .order6{
+        order: 1;
+    } */
+</style>
+
+<body>
+    <div class="container">
+        <div class="item1 order1">1</div>
+        <div class="item2 order2">2</div>
+        <div class="item3 order3">3</div>
+        <div class="item4 order4">4</div>
+        <div class="item5 order5">5</div>
+        <div class="item6 order6">6</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .gridout {
+            border: 2px solid red;
+            height: 70vh;
+            width: 80vw;
+            display: grid;
+            /* grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr); */
+            grid-template-areas: 'Eng Deu Rea'
+                'FAF AFf Afa'
+                'FGA GAS ASF'
+                'LAS GHH HAF';
+        }
+
+        .item {
+            background-color: cadetblue;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .item1 {
+            grid-area: Eng;
+        }
+
+        .item2 {
+            grid-area: Deu;
+        }
+
+        .item3 {
+            grid-area: Rea;
+        }
+
+        .item4 {
+            grid-area: FAF;
+        }
+
+        .item5 {
+            grid-area: AFf;
+        }
+
+        .item6 {
+            grid-area: Afa;
+        }
+
+        .item7 {
+            grid-area: FGA;
+        }
+
+        .item8 {
+            grid-area: GAS;
+        }
+
+        .item9 {
+            grid-area: ASF;
+        }
+
+        .item10 {
+            grid-area: LAS;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gridout">
+            <div class="item item1">English</div>
+            <div class="item item2">Deutch</div>
+            <div class="item item3">Italiano</div>
+            <div class="item item4">Edivol</div>
+            <div class="item item5">franais</div>
+            <div class="item item6">Portuges</div>
+            <div class="item item7">China</div>
+            <div class="item item8">Hello</div>
+            <div class="item item9">Bye</div>
+            <div class="item item10">ETETT</div>
+        </div>
+    </div>
+</body>
+
+</html>

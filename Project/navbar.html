@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar {
+            /* border: 2px solid red; */
+            height: 60px;
+            width: 60vw;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin: 20px;
+            flex-wrap: inherit;
+            position: absolute;
+        }
+
+        .content {
+            font-family: "Baloo 2", sans-serif;
+            margin: 20px;
+            display: flex;
+            gap: 18px;
+            font-size: 12px;
+            flex-wrap: wrap;
+        }
+
+        p {
+            border-radius: 1000px;
+            padding: 8px;
+            width: auto;
+        }
+
+        img {
+            left: 7px;
+            position: absolute;
+        }
+
+        .title {
+            font-family: "Montserrat", sans-serif;
+            top: 17px;
+            position: absolute;
+            font-size: 25px;
+            left: 64px;
+            font-weight: 600;
+        }
+
+        .utitle {
+            font-size: 9px;
+            position: absolute;
+            left: 69px;
+            top: 43px;
+        }
+
+        p:hover {
+            background-color: rgb(207, 207, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="navbar">
+                <img height="50px" width="50px" src="navbar logo.png">
+                <div class="title">UltraEdit</div>
+                <div class="content">
+                    <p>Product</p>
+                    <p>Pricing</p>
+                    <p>Resources</p>
+                    <p>About Us</p>
+                    <div class="utitle">
+                        An editing Company
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

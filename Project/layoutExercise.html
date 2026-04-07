@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Exercise</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mbody {
+            position: static;
+        }
+
+        .navbar {
+            padding: 30px;
+            background-color: pink;
+            position: sticky;
+            top: 0px;
+            z-index: 1;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: end;
+            flex-wrap: wrap;
+            text-indent: 33px;
+            font-family: "poppins", serif;
+            font-size: 20px;
+        }
+
+        .ibody {
+            height: 500px;
+            background-color: rgb(187, 223, 229);
+            margin: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .ibodybox1 {
+            background-color: rgb(243, 150, 116);
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .ibodybox2 {
+            height: 300px;
+            width: 300px;
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: rgb(125, 192, 255);
+            font-family: sans-serif;
+        }
+
+        .text {
+            font-family: "Baloo 2", serif;
+            font-size: 35px;
+            text-align: center;
+            padding: 30px;
+            margin: 15px
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #76bcbc;
+        }
+
+        img {
+            border-radius: 50px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="mbody">
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+        <div class="ibody">
+
+            <div class="ibodybox1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tenetur vel laboriosam
+                harum modi reprehenderit nobis, corrupti dolore delectus neque facere exercitationem officiis, ducimus
+                perspiciatis. Sapiente assumenda explicabo ipsa perspiciatis laboriosam qui dolor architecto est.</div>
+
+            <div class="ibodybox2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia facere ea at saepe
+                doloribus deleniti blanditiis atque delectus iure animi.</div>
+
+        </div>
+
+        <div class="text">
+            Welcome Santanu Basak. This is a design of web layout. Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Illo quia earum hic itaque quas sunt quo fugit ab! Aspernatur quidem atque nostrum sapiente
+            perferendis. Temporibus delectus placeat praesentium nobis doloribus!
+        </div>
+
+        <footer>
+            <!-- This a footer -->
+        </footer>
+
+        <img src="logo.jpg" height="50px" width="50px">
+
+    </div>
+</body>
+
+</html>
