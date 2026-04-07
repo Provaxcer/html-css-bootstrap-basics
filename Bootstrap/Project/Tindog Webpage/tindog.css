@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Added for better box model handling */
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+.header {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 300% 300%;
+    animation: gradient-animation 18s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    /* Ensure header does not exceed viewport */
+}
+
+.dogimge {
+    left: 36%;
+    top: 50px;
+    position: relative;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.text {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    left: 21%;
+    position: relative;
+}
+
+.downloadbtn {
+    top: 109px;
+    left: -612px;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    /* Center buttons and prevent overflow */
+}
+
+.btn {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.btm {
+    margin-left: 8px;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn1 {
+    background-color: #feffff;
+}
+
+.btm:hover {
+    background-color: #feffff;
+    color: black;
+}
+
+.btn1:hover {
+    background-color: #ebecec;
+}
+
+.btn-primary {
+    background-color: #212529;
+    border-color: #212529;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn-enterprise {
+    background-color: #212529;
+    border-color: #212529;
+    color: white;
+}
+
+.btn-enterprise:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+img,
+svg {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.second {
+    padding: 75px;
+}
+
+.flex1,
+.flex2,
+.flex3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.pad1 {
+    padding-top: 5px;
+    padding-left: 57px;
+}
+
+.articleF {
+    height: 500px;
+    width: 100vw;
+    background-color: #f7fafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.woof {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-weight: 500;
+    font-size: 25px;
+    padding-top: 80px;
+}
+
+.dogi {
+    border-radius: 500px;
+    margin-top: 30px;
+}
+
+.FourC {
+    display: flex;
+    justify-content: center;
+    column-gap: 150px;
+    padding-top: 50px;
+}
+
+.Pebbles {
+    margin-top: 10px;
+}
+
+.pricingflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    row-gap: 12px;
+}
+
+.pricingp2 {
+    padding: 0 20px;
+    /* Adjust padding to prevent overflow */
+    padding-top: 130px;
+    padding-bottom: 40px;
+}
+
+.btn-outline-primary {
+    color: #212529;
+    border-color: #212529;
+}
+
+.btn-outline-primary:hover {
+    border-color: #212529;
+    background-color: #212529;
+    color: white;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+        /* Start position */
+    }
+
+    50% {
+        background-position: 100% 50%;
+        /* Middle position */
+    }
+
+    100% {
+        background-position: 0% 50%;
+        /* End position */
+    }
+}
+
+.foot {
+    padding-left: 100px;
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 300% 300%;
+    animation: gradient-animation 18s ease infinite;
+}
+
+.my-5 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
